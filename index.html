@@ -172,6 +172,14 @@ playPauseBtn.addEventListener("click", () => {
 const loopBtn = document.getElementById("loop-btn");
 let isLooping = false;
 
+// Add a click event listener to the loop button
+loopBtn.addEventListener("click", () => {
+  // Toggle the loop attribute of the currentVideo element
+  if (currentVideo) {
+    currentVideo.loop = !currentVideo.loop;
+  }
+});
+
 loopBtn.addEventListener("click", () => {
   if (isLooping) {
     currentVideo.loop = false;
