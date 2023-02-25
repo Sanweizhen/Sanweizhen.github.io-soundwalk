@@ -87,6 +87,7 @@ https://www.behance.net/gallery/49260123/Web-Audio-Visualization
              <div class="controlvideo">
              <p id="fullscreen-btn">Fullscreen</p>
              <p id="play-pause-btn">Play/Pause</p>
+             <p id="loop-btn">Loop</p>
             </div>
             </div>	
         <canvas id="freq" width="1024" height="525"></canvas>
@@ -167,6 +168,20 @@ playPauseBtn.addEventListener("click", () => {
   }
 });
 
+//loopbutton
+const loopBtn = document.getElementById("loop-btn");
+let isLooping = false;
+
+loopBtn.addEventListener("click", () => {
+  if (isLooping) {
+    currentVideo.loop = false;
+    loopBtn.classList.remove("loop-active");
+  } else {
+    currentVideo.loop = true;
+    loopBtn.classList.add("loop-active");
+  }
+  isLooping = !isLooping;
+});
 
           </script>
       
