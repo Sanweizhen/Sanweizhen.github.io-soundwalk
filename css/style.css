@@ -157,7 +157,15 @@ html, body {
   transform: scale(1.1);
 }
 
-#fullscreen-btn:hover,#play-pause-btn:hover{
+#fullscreen-btn:hover,#play-pause-btn:hover,#loop-btn:hover{
+  color: #28b591;
+}
+
+#loop-btn:active{
+color: #28b591;
+}
+
+.loop-active {
   color: #28b591;
 }
 
@@ -172,9 +180,8 @@ html, body {
 }
 
 .controlvideo{
-  display: block;
-  position: relative;
-  
+  margin-top: 50px;
+  display:block;
 }
 
 
