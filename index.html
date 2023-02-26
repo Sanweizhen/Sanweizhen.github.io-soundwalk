@@ -190,7 +190,13 @@ loopBtn.addEventListener("click", () => {
   }
   isLooping = !isLooping;
 });
+const ctx = videoCanvas.getContext("2d");
+// Set font properties
+ctx.font = "10px Poppins";
+ctx.fillStyle = "black";
 
+// Draw text on canvas
+ctx.fillText("Choose the material on the left to start", 200, 250);
           </script>
       
     </body>
