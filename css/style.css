@@ -139,7 +139,7 @@ html, body {
   height:40px;
   transition: transform 0.3s ease;
   transition: filter 0.3s ease;
-  
+  cursor: pointer;
   
 }
 
@@ -175,13 +175,14 @@ color: #28b591;
   font-weight: 400;
   margin-bottom: 10px;
   margin-top: auto;
-  
+  cursor: pointer;
 
 }
 
 .controlvideo{
   margin-top: 50px;
   display:block;
+  
 }
 
 
