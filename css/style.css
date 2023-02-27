@@ -156,30 +156,33 @@ html, body {
   transform: scale(1.1);
 }
 
+
 #fullscreen-btn:hover,#play-pause-btn:hover,#loop-btn:hover{
-  color: #28b591;
+  filter:saturate(30);
+ 
 }
 
 #loop-btn:active{
-color: #28b591;
+  filter:saturate(30);
 }
 
 .loop-active {
-  color: #28b591;
+  filter:saturate(30);
 }
 
-.controlvideo p{
-  font-size: 15px;
-  margin: 2px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  margin-top: auto;
-  cursor: pointer;!important
+.controlvideo img{
+  width: 30px;
+  height: 30px;
+  
+  cursor: pointer;
+
 }
 
 .controlvideo{
-  margin-top: 50px;
-  display:block;
+  margin:300px 200px 30px 100px;
+
+  display:inline;
+  
 }
 
 
